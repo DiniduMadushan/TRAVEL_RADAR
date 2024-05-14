@@ -1,0 +1,334 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-image: url('philipp-kammerer-6Mxb_mZ_Q8E-unsplash-2.jpg'); 
+    background-size: cover; 
+    background-position: center; 
+    color: #333; 
+}
+
+nav {
+    background-color: rgba(35, 39, 38, 0.7);
+    padding: 10px;
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex; 
+    align-items: center;
+}
+
+nav li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+nav a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+nav a.active {
+    color: #009688; 
+    font-weight: bold; 
+}
+
+.search-container {
+    display: flex;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    border-radius: 20px;
+    background-color: #fff;
+    padding: 5px;
+  }
+  .search-input {
+    border: none;
+    padding: 10px;
+    margin-right: 10px;
+    border-radius: 20px;
+    outline: none;
+    width: 250px;
+    font-size: 16px;
+  }
+  .search-button, .clear-button {
+    border: none;
+    padding: 10px 20px;
+    border-radius: 20px;
+    outline: none;
+    cursor: pointer;
+    color: #fff;
+    background-color: #009688;
+    margin-right: 5px;
+  }
+  .clear-button {
+    background-color: #ccc;
+  }
+
+  #hero {
+    background-size: cover;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; 
+    padding-left: 5%; 
+    color: #ffffff;
+}
+
+
+
+#hero h2 {
+    font-size: 55px;
+    margin-bottom: 30px;
+   
+}
+
+#hero p {
+    font-size: 30px;
+    margin-bottom: 20px;
+    max-width: 600px;
+    border: 4px solid #009688;
+    border-radius: 20px;
+    padding:20px;
+}
+
+#aboutus {
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-left: 5%;
+    color: #ffffff;
+}
+
+
+#aboutus h2 {
+    font-size: 48px;
+    margin-bottom: 25px;
+}
+#aboutus p {
+    font-size: 20px;
+    text-align: justify;
+    margin-bottom: 10px;
+    border: 4px solid #009688;
+    border-radius: 20px;
+    padding:20px;
+    max-width: 80%;
+}
+
+#book-now {
+    background-color: #003366;
+    color: #ffffff;
+    border: none;
+    border-radius: 20px;;
+    margin-top: 80px;
+    padding: 10px 20px;
+    font-size: 24px;
+    cursor: pointer;
+}
+.social-icons {
+    list-style: none;
+    padding: 0;
+    display: flex;
+}
+
+.social-icons li {
+    margin-right: 20px;
+}
+
+.social-icons li:last-child {
+    margin-right: 0;
+}
+
+.social-icons a {
+    color: #edeaea; 
+    font-size: 24px; 
+}
+
+#our-team {
+    padding: 50px;
+    color:white;
+    padding-left: 5%;
+}
+#our-team h2 {
+    font-size: 48px;
+    margin-bottom: 30px;
+}
+
+.developer-profiles {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border: 4px solid #21181c;
+    max-width: 85%;
+    border-radius: 20px;background-color: rgba(255, 255, 255, 0.1); 
+}
+
+.developer-profile {
+    width: 20%;
+    text-align: center;
+    color:white;
+}
+
+.developer-profile img {
+    margin-top: 20px;
+    width: 70%;
+    border: 2px solid #282c2b;
+    border-radius: 50px;
+}
+
+.developer-profile h3 {
+    margin-top: 20px;
+}
+
+.developer-profile p {
+    font-style: italic;
+    color: #fbfbfb;
+    margin-top: 10px;
+    border: 2px solid #1e201f;
+    border-radius: 20px;
+}
+
+.social-icons {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.social-icons li {
+    margin-right: 10px;
+}
+
+.social-icons a {
+    color: #ffffff;
+    font-size: 24px;
+}
+
+#contact-us {
+    padding: 50px;
+}
+
+.row {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;margin-right: 100px;
+}
+
+.column {
+    flex: 1;
+}
+
+#contact-us h1 {
+    font-size: 60px;
+    color: #d6dfde;
+}
+#contact-us p {
+    font-size: 25px;
+    color: #d6dfde;
+    max-width: 500px;
+    text-align: justify;
+
+}
+
+
+
+.contact-form {
+    padding: 20px;
+    border: 4px solid #242121;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.6); 
+}
+
+.contact-form label,
+.contact-form input,
+.contact-form textarea {
+    display: block;
+    margin-bottom: 10px;
+    background-color: transparent;
+}
+
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.contact-form input[type="submit"] {
+    background-color: #009688;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.unique-row {
+    display: flex;
+}
+
+.hero-column {
+    flex: 1;
+    padding: 20px;
+}
+
+.city-card-column p{
+    text-align: end;
+    margin-right: 120px;
+    color: #d6dfde;
+    font-size: 30px;
+}
+
+.city-card-column {
+    flex: 1;
+    padding: 20px;
+}
+
+.hero {
+    background-color: #f0f0f0;
+    padding: 20px;
+    text-align: center;
+}
+
+.city-card {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    max-width: 400px; /* Adjust as needed */
+    margin: 20px auto; /* Center the card horizontally and create space between cards */
+    margin-right: 5px;
+}
+
+
+.city-card img {
+    max-width: 100%;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+.city-card h2 {
+    margin: 0;
+    font-size: 20px;
+    padding: 10px;
+}
+
+.city-card button {
+    background-color: #009688;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+}

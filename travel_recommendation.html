@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Home</title>
+    <link rel="stylesheet" type="text/css" href="travel_recommendation.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"> 
+</head>
+<body>
+    <nav>
+        <ul class="social-icons">
+            <li><a href="#"><i class="fab fa-facebook"></i></a></li> 
+            <li><a href="#"><i class="fab fa-twitter"></i></a></li>  
+            <li><a href="#"><i class="fab fa-instagram"></i></a></li> 
+            <li><a href="#"><i class="fab fa-youtube"></i></a></li>
+            
+        </ul>
+        <ul>
+            <li><a href="travel_recommendation.html" class="active">Home</a></li>
+            <li><a href="about_us.html">About Us</a></li>
+            <li><a href="contact_us.html">Contact Us</a></li>
+            <li><div class="search-container">
+                <input type="text" class="search-input" id="searchKey" placeholder="Enter a destination or keyword">
+                <button class="search-button" id="searchBtn">Search</button>
+                <button class="clear-button" id="clearBtn">Clear</button>
+              </div></li>
+            
+        </ul>
+        
+        
+    </nav>
+
+    <div class="unique-row">
+        <div class="hero-column">
+            <section id="hero">
+                <h2>"ADVENTURE AWAITS."</h2>
+                <p>"The world is a book,and those who do not travel read only a page."</p>
+                <button id="book-now">BOOK NOW</button>
+            </section>
+        </div>
+        <div class="city-card-column" id='result'>
+
+            <p id="searchStatus"></p>
+
+            
+            <!-- <div class="city-card">
+                <img src="image-asset.jpeg" alt="City Image">
+                <h2>New York City</h2>
+                <p>description</p>
+                <button>Visit</button>
+            </div> -->
+            
+        </div>
+    </div>
+    
+    <script src="travel_recommendation.js"></script>
+</body>
+</html>
