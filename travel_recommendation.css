@@ -282,13 +282,13 @@ nav a.active {
 
 .result-card-column p{
     text-align: end;
-    margin-right: 120px;
+    margin-right: 160px;
     color: #d6dfde;
 }
 
 .result-card-column {
     flex: 1;
-    padding: 20px;
+    padding: 40px;
 }
 
 .hero {
@@ -298,14 +298,14 @@ nav a.active {
 }
 
 .result-card {
-    background-color: #fff;
-    border: 1px solid #ddd;
+    background-color: rgba(181, 176, 176,0.9);
+    border: 2px solid #ddd;
     border-radius: 8px;
     padding: 20px;
     text-align: center;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    max-width: 400px; /* Adjust as needed */
-    margin: 20px auto; /* Center the card horizontally and create space between cards */
+    max-width: 400px;
+    margin: 20px auto;
     margin-right: 5px;
 }
 
@@ -319,6 +319,12 @@ nav a.active {
 .result-card h2 {
     margin: 0;
     font-size: 20px;
+    padding: 10px;
+}
+.result-card p {
+    margin: 0;
+    font-size: 18px;
+    text-align: center;
     padding: 10px;
 }
 

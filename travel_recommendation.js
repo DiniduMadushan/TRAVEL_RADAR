@@ -67,7 +67,7 @@ function searchCountries() {
                 resultDiv.innerHTML += templeCards;
 
             } else {
-                resultDiv.innerHTML = `<p id="searchStatus">no result found..try keywords("countries","beaches","temples")</p>`;
+                resultDiv.innerHTML = `<p id="searchStatus">no result found..</p>`;
             }
         })
         .catch(error => {
