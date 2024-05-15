@@ -17,31 +17,25 @@ function searchCountries() {
         .then(response => response.json())
         .then(data => {
             const countries = data.countries;
-            console.log
+            console.log(countries);
             // Check if the search term is "countries"
             if (searchTerm === "countries") {
                 // Iterate through all countries
                 countries.forEach(country => {
                     const cities = country.cities.map(city => `
-                        <div class="city-card">
+                        <div class="result-card">
                             <img src="${city.imageUrl}" alt="City Image">
                             <h2>${city.name}</h2>
                             <p>${city.description}</p>
                             <button>Visit</button>
                         </div>
+                        
                     `).join('');
 
-                    resultDiv.innerHTML += `
-                        <div class="country-card">
-                            <h2>${country.name}</h2>
-                            <div class="city-card-column">
-                                ${cities}
-                            </div>
-                        </div>
-                    `;
+                    resultDiv.innerHTML += cities;
                 });
             } else {
-                resultDiv.innerHTML = 'No matching countries found.';
+                resultDiv.innerHTML = `<p id="searchStatus">no result found..try keywords("countries","beaches","temples")</p>`;
             }
         })
         .catch(error => {

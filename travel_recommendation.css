@@ -280,14 +280,13 @@ nav a.active {
     padding: 20px;
 }
 
-.city-card-column p{
+.result-card-column p{
     text-align: end;
     margin-right: 120px;
     color: #d6dfde;
-    font-size: 30px;
 }
 
-.city-card-column {
+.result-card-column {
     flex: 1;
     padding: 20px;
 }
@@ -298,7 +297,7 @@ nav a.active {
     text-align: center;
 }
 
-.city-card {
+.result-card {
     background-color: #fff;
     border: 1px solid #ddd;
     border-radius: 8px;
@@ -311,19 +310,19 @@ nav a.active {
 }
 
 
-.city-card img {
+.result-card img {
     max-width: 100%;
     border-radius: 8px;
     margin-bottom: 10px;
 }
 
-.city-card h2 {
+.result-card h2 {
     margin: 0;
     font-size: 20px;
     padding: 10px;
 }
 
-.city-card button {
+.result-card button {
     background-color: #009688;
     color: #fff;
     border: none;
