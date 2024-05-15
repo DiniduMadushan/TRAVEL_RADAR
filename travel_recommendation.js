@@ -7,23 +7,41 @@ function clearSearch() {
 
 clearBtn.addEventListener("click", clearSearch);
 
-function searchCondition() {
-    const input = document.getElementById('searchKey').value.toLowerCase();
-    console.log(input);
+function searchCountries() {
+    const searchTerm = document.getElementById('searchKey').value.trim().toLowerCase();
     const resultDiv = document.getElementById('result');
     resultDiv.innerHTML = '';
 
+    // Fetch the JSON data
     fetch('travel_recommendation_api.json')
         .then(response => response.json())
         .then(data => {
-            const country = data.countries.find(item => item.name.toLowerCase() === input);
+            const countries = data.countries;
+            console.log
+            // Check if the search term is "countries"
+            if (searchTerm === "countries") {
+                // Iterate through all countries
+                countries.forEach(country => {
+                    const cities = country.cities.map(city => `
+                        <div class="city-card">
+                            <img src="${city.imageUrl}" alt="City Image">
+                            <h2>${city.name}</h2>
+                            <p>${city.description}</p>
+                            <button>Visit</button>
+                        </div>
+                    `).join('');
 
-            if (country) {
-                resultDiv.innerHTML += `<h2>${country.name}</h2>`;
-                resultDiv.innerHTML += `<img src="${country.imageUrl}" alt="${country.name}">`;
-                resultDiv.innerHTML += `<p>${country.description}</p>`;
+                    resultDiv.innerHTML += `
+                        <div class="country-card">
+                            <h2>${country.name}</h2>
+                            <div class="city-card-column">
+                                ${cities}
+                            </div>
+                        </div>
+                    `;
+                });
             } else {
-                resultDiv.innerHTML = 'Country not found.';
+                resultDiv.innerHTML = 'No matching countries found.';
             }
         })
         .catch(error => {
@@ -32,4 +50,5 @@ function searchCondition() {
         });
 }
 
-searchBtn.addEventListener("click", searchCondition);
+
+searchBtn.addEventListener("click", searchCountries);
