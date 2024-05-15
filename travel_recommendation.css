@@ -296,6 +296,7 @@ nav a.active {
 .result-card-column p{
     text-align: end;
     margin-right: 160px;
+    margin-top: 50px;
     color: #d6dfde;
 }
 
